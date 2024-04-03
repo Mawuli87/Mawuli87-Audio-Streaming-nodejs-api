@@ -12,6 +12,9 @@ import historyRouter from "./routers/history";
 import "./utils/schedule";
 
 const app = express();
+// ADD THIS
+var cors = require("cors");
+app.use(cors());
 
 // register our middleware
 app.use(express.json());
