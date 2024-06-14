@@ -178,7 +178,7 @@ export const getRecommendByProfile: RequestHandler = async (req, res) => {
   if (user) {
     // then we want to send by the profile
 
-    // fetch users previous history
+    // fetch users previous history. history api
     const category = await getUsersPreviousHistory(req);
 
     if (category.length) {
